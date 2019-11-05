@@ -10,9 +10,17 @@ import UIKit
 
 class PokemonCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var pokeImageView: UIImageView!
+    @IBOutlet weak var pokeNameLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        layer.cornerRadius = 5.0
+     }
+    
+    
+    func configureCell(pokemon: Pokemon){
+        pokeNameLabel.text = pokemon.name
+        pokeImageView.image = UIImage(named: "\(pokemon.pokedexId ?? 1)")
     }
-
 }

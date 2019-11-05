@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+class Pokemon {
+    var name: String!
+    var pokedexId: Int!
+    
+    init(name: String, pokedexId: Int) {
+         self.name = name
+        self.pokedexId = pokedexId
+    }
+}
