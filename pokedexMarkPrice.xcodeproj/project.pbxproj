@@ -18,6 +18,7 @@
 		D12872112371882300280B22 /* PokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12872102371882300280B22 /* PokemonViewController.swift */; };
 		D12872142371B17A00280B22 /* PokemonSolid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D12872132371B17A00280B22 /* PokemonSolid.ttf */; };
 		D12872182371B65900280B22 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D12872172371B65900280B22 /* music.mp3 */; };
+		D128721A2371DC7600280B22 /* PokemonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12872192371DC7600280B22 /* PokemonDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		D12872102371882300280B22 /* PokemonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonViewController.swift; sourceTree = "<group>"; };
 		D12872132371B17A00280B22 /* PokemonSolid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PokemonSolid.ttf; sourceTree = "<group>"; };
 		D12872172371B65900280B22 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		D12872192371DC7600280B22 /* PokemonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +70,7 @@
 			children = (
 				D12872122371B16C00280B22 /* Resources */,
 				D128720B237187D800280B22 /* PokemonCollectionViewCell */,
-				D1287208237183F400280B22 /* Main */,
+				D1287208237183F400280B22 /* Pokemon */,
 				D1287205237182AA00280B22 /* Model */,
 				D12871F123717D3100280B22 /* AppDelegate.swift */,
 				D12872032371820B00280B22 /* pokemon.csv */,
@@ -87,13 +89,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		D1287208237183F400280B22 /* Main */ = {
+		D1287208237183F400280B22 /* Pokemon */ = {
 			isa = PBXGroup;
 			children = (
 				D12872092371840200280B22 /* Main.storyboard */,
 				D12872102371882300280B22 /* PokemonViewController.swift */,
+				D12872192371DC7600280B22 /* PokemonDetailsViewController.swift */,
 			);
-			path = Main;
+			path = Pokemon;
 			sourceTree = "<group>";
 		};
 		D128720B237187D800280B22 /* PokemonCollectionViewCell */ = {
@@ -190,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D12871F223717D3100280B22 /* AppDelegate.swift in Sources */,
+				D128721A2371DC7600280B22 /* PokemonDetailsViewController.swift in Sources */,
 				D128720E2371880200280B22 /* PokemonCollectionViewCell.swift in Sources */,
 				D12872112371882300280B22 /* PokemonViewController.swift in Sources */,
 				D1287207237182B600280B22 /* Pokemon.swift in Sources */,

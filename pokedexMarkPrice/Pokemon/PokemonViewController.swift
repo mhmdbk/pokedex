@@ -78,6 +78,12 @@ extension PokemonViewController: UICollectionViewDelegateFlowLayout {
 
 extension PokemonViewController: UICollectionViewDelegate {
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyBoard.instantiateViewController(withIdentifier: "PokemonDetailsViewController") as! PokemonDetailsViewController
+        vc.pokemon = pokemonArray[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 extension PokemonViewController: UICollectionViewDataSource {
@@ -103,9 +109,7 @@ extension PokemonViewController: UICollectionViewDataSource {
         
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-    }
+ 
     
 }
 
@@ -113,8 +117,9 @@ extension PokemonViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
          if searchBar.text == nil || searchBar.text == "" {
             inSearchMode = false
-            view.endEditing(true)
             pokeCollectionView.reloadData()
+            view.endEditing(true)
+
         }
         else {
             inSearchMode = true
